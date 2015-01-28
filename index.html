@@ -1,0 +1,2580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<title>MI CIUDAD</title>
+
+<script type="text/javascript" src="js/howler.js"></script>
+
+
+<style >
+
+body{
+background-color: #ffb700;	
+color: #b5b5b5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bolder;
+    text-transform: none;
+    text-decoration: none; 
+     
+	
+}
+.statususuario{
+	position:absolute;top:550px;width:600px;left:50%;margin-left:-300px;;
+	color: #b5b5b5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: none;
+    text-decoration: none; 
+}
+.statushelp{
+	position:absolute;bottom:0px;width:98%;
+	color: #b5b5b5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: none;
+    text-decoration: none; 
+    background-color: #ebebeb;
+    padding: 20px;
+}
+.lklogin{
+	position:absolute;top:490px;left:50%;display:block;width:200px;height:30px;margin-left:-100px;
+	color: #b5b5b5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bolder;
+    text-transform: none;
+    text-decoration: none; 
+    	background-color: rgba(227,227,227,0.87);
+   -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border:1px solid #717171;
+	behavior: url(js/border-radius.htc);
+	border-radius:5px;
+}
+.lklogin:hover{
+background-color: rgba(63,100,50,0.87);
+}
+
+
+#barra1:before{
+position: absolute;
+top:60px;
+left:60px;
+width: 600px;
+height: 20px;
+content: "Encuentra 10 logos de Inmobiliaria Fortuna en el menor tiempo posible.";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+
+	
+}
+#barra1:after{
+position: absolute;
+top:-30px;
+left:50%;
+margin-left: -125px;
+width: 250px;
+height: 130px;
+content: "";
+color: #ffbb00;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 34px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/ciudadfortunalogo.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 250px 130px;
+	
+}
+
+#timerstart:before, #timerplay:before{
+position: absolute;
+top:5px;
+left:10px;
+width: 40px;
+height: 40px;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/tiempogris.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 40px 40px;
+	
+}
+#statusganador:before{
+position: absolute;
+top:-150px;
+left:50%;
+margin-left: -40px;
+width: 80px;
+height: 100px;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/trofeo.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 80px 100px;
+	
+}
+
+#globalscore:before{
+position: absolute;
+top:5px;
+left:10px;
+width: 40px;
+height: 40px;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/trofeo.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 40px 40px;
+	
+}
+
+.perfil{
+position: absolute;
+top:0px;
+left:0px;
+width: 100%;
+height:200px;
+background-color: #695aa3;	
+background-image: url(images/city3.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 100% 200px;	
+}
+
+.board{
+position: absolute;
+top:200px;
+left:60px;
+right: 0px;
+width: 95%;
+height:50px;
+color: #979797;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+ 
+background-color: #c8e1b9;	
+	
+}
+
+
+
+.news{
+position: absolute;
+top:0px;
+left:0px;
+width: 100%;
+height:50px;
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    text-indent: 60px;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+    opacity: 1;
+    transform:  translate(0px,0px);
+-webkit-transform:  translate(0px,0px);
+-moz-transform:   translate(0px,0px);
+-o-transform:   translate(0px,0px);
+-ms-transform:   translate(0px,0px);
+-webkit-transition: opacity 0.5s linear ;
+-moz-transition: opacity 0.5s linear ;
+-o-transition: opacity 0.5s linear ;
+-ms-transition: opacity 0.5s linear ;
+transition: opacity 0.5s linear ;
+
+	
+}
+.newsout{
+position: absolute;
+top:0px;
+left:0px;
+width: 100%;
+height:50px;
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    text-indent: 60px;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+    opacity: 0;
+    transform:  translate(0px,-100px);
+-webkit-transform:  translate(0px,-100px);
+-moz-transform:   translate(0px,-100px);
+-o-transform:   translate(0px,-100px);
+-ms-transform:   translate(0px,-100px);
+-webkit-transition: -webkit-transform 1s linear ,opacity 1s linear ;
+-moz-transition: -moz-transform 1s linear ,opacity 1s linear ;
+-o-transition: -o-transform 1s linear ,opacity 1s linear ;
+-ms-transition: -ms-transform 1s linear ,opacity 1s linear ;
+transition: transform 1s linear ,opacity 1s linear ;
+
+	
+}
+
+.sorteo{
+position: relative;
+top:10%;
+width: 800px;
+height: 40px;
+color: #979797;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+   
+	
+	
+}
+
+.sorteo:before{
+position: absolute;
+top:-40px;
+left:50%;
+margin-left:-400px;
+width: 100%;
+content: attr(title);
+color: #335d27;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform:uppercase;
+    text-decoration: none; 
+   
+	
+	
+}
+
+#score:before{
+position: absolute;
+top:0px;
+left:0px;
+width: 40px;
+height: 40px;
+content: attr(data-score);
+color: #ff9e00;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/star.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 40px 40px;
+	
+}
+
+#statusiniciox:before{
+position: absolute;
+top:-20px;
+left:50%;
+margin-left: -75px;
+width: 150px;
+content: "Creando escenario...";
+color: #d8d8d8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: normal;
+    text-transform: none;
+    text-decoration: none; 
+	
+
+	
+}
+
+#globalscore:after,#score:after,#timerplay:after,#timerstart:after,#statusinicio:after{
+position: absolute;
+bottom:-20px;
+left:0px;
+width: 100%;
+height: 20px;
+content: attr(title);
+color: rgb(17,104,65);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+    	
+	background-color: rgba(255,255,255,0.64);
+}
+
+#board:after{
+position: absolute;
+bottom:-20px;
+left:0px;
+width: 100%;
+height: 20px;
+content: attr(title);
+color: rgb(17,104,65);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    text-indent: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+    	
+	background-color: rgba(255,255,255,0.64);
+}
+
+#board:before{
+position: absolute;
+top:5px;
+left:10px;
+width: 40px;
+height: 40px;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/trofeo.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 40px 40px;
+	
+}
+
+
+
+.confetti{
+	position: absolute;
+	top:100px;
+	left:50%;
+	margin-left: -250px;
+z-index: 5000;
+
+}
+.escenario{
+position: absolute;
+top:0;
+left:0;
+margin-top:0;
+margin-left:0;
+width:100%;
+height:100%;
+overflow: hidden;
+background-color: white;
+}
+.cover{
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color: white;
+z-index: 6000;
+}
+
+.cover:before{
+position: absolute;
+top:205px;
+left:10px;
+width: 40px;
+height: 40px;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/icohome.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 40px 40px;
+	
+}
+
+.cover:after{
+position: absolute;
+top:30px;
+left:50%;
+margin-left: -150px;
+width: 300px;
+height: 155px;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/ciudadfortunalogoblanco.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 300px 155px;
+	
+}
+
+.barra1{
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:50px;
+z-index: 5000;
+background-color: rgba(255,255,255,0.64);
+}
+.barra2{
+position: absolute;
+bottom:0;
+left:0;
+width:100%;
+height:50px;
+z-index: 5000;
+background-color: rgba(255,255,255,0.64);
+}
+.statusganador{
+position: absolute;
+top:50%;
+left:50%;
+margin-left: -400px;
+width:800px;
+height:50px;
+z-index: 5000;
+
+color: rgb(17,104,65);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+    
+     
+}
+
+.score{
+position: absolute;
+right:0px;
+left:0px;
+width:50px;
+height:50px;
+z-index: 5000;
+background-color: rgb(17,104,65);
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;
+     
+}
+
+.timerplay{
+position: absolute;
+top:0px;
+left:400px;
+width:100px;
+height:50px;
+z-index: 5000;
+background-color: red;
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;
+     
+}
+
+
+.drop{
+position: absolute;
+top:0px;
+left:0px;
+width:10px;
+height:10px;
+z-index: 5000;
+background-color: yellow;
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;
+     
+}
+.statusinicio{
+position: absolute;
+top:0px;
+left:100%;
+margin-left: -90px;
+width:90px;
+height:50px;
+z-index: 5000;
+background-color: #c3c3c3;
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;
+     
+}
+.gameover{
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index: 5000;
+background-color: white;
+display: none;
+color: #b4b4b4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+   
+}
+.gameover:before{
+position: absolute;
+top:20px;
+left:50%;
+margin-left: -50px;
+width: 100px;
+height: 80px;
+content: "";
+	
+	background-image: url(images/logofortuna.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 100px 80px;
+
+	
+}
+
+
+.ciudad{
+position: absolute;
+top:50%;
+left:50%;
+margin-top:-4500px;
+margin-left:-4500px;
+width:9100px;
+height:9100px;
+background-color: #bdb4c4;
+transform: translate(0px,0px) scale(0.1,0.1);
+-webkit-transform: translate(0px,0px);
+-moz-transform:  translate(0px,0px)scale(0.2,0.2);
+-o-transform: translate(0px,0px)scale(0.2,0.2);
+-ms-transform:  translate(0px,0px)scale(0.2,0.2);
+-webkit-transition: -webkit-transform 1s linear;
+-moz-transition: -moz-transform 1s linear;
+-o-transition: -o-transform 1s linear;
+-ms-transition: -ms-transform 1s linear;
+transition: transform 1s linear;
+}
+.city{
+position: absolute;
+top:0;
+left:0;
+margin-top:0px;
+margin-left:-250px;
+width:9100px;
+height:9100px;
+
+z-index: 10000;
+opacity: 0.5;
+}
+.laberinto{
+position: absolute;
+top:50%;
+left:50%;
+margin-top:-5000px;
+margin-left:-5000px;
+width:10000px;
+height:10000px;
+background-color: #9ab6bc;
+}
+.player{
+position: absolute;
+top:4500px;
+left:50%;
+margin-top:-55px;
+margin-left:-25px;
+width:50px;
+height:110px;
+
+transform-origin: center center;
+-webkit-transform-origin: center center;
+-moz-transform-origin: center center;
+-o-transform-origin: center center;
+-ms-transform-origin: center center;
+
+transform: translate(0px,0px);
+-webkit-transform: translate(0px,0px);
+-moz-transform:  translate(0px,0px);
+-o-transform: translate(0px,0px);
+-ms-transform:  translate(0px,0px);
+
+-webkit-transition: -webkit-transform 1s linear;
+-moz-transition: -moz-transform 1s linear;
+-o-transition: -o-transform 1s linear;
+-ms-transition: -ms-transform 1s linear;
+transition: transform 1s linear;
+
+    z-index: 1000;
+}
+.car{
+position: absolute;
+top:0px;
+left:0px;
+
+width:50px;
+height:110px;
+background-image: url(images/auto1.png);
+background-repeat: no-repeat;
+background-size: cover;
+transform: translate(0px,0px);
+-webkit-transform: translate(0px,0px);
+-moz-transform:  translate(0px,0px);
+-o-transform: translate(0px,0px);
+-ms-transform:  translate(0px,0px);
+
+
+    z-index: 1000;
+}
+.avanzar1{
+position: absolute;
+width:50px;
+height:50px;
+background-color:  rgba(255,255,255,0.74);
+border: 2px solid #d2d2d2;
+    z-index: 1000;
+    color: #34653a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+}
+.avanzar2{
+position: absolute;
+width:50px;
+height:50px;
+background-color:  rgba(255,255,255,0.74);
+border: 2px solid #d2d2d2;
+    z-index: 1000;
+}
+.avanzar1:hover,.avanzar2:hover{
+background-color:  rgba(255,154,0,0.74);
+}
+
+.logos{
+position: absolute;
+top:10px;
+left:100px;
+margin:0px;
+width:500px;
+height:40px;
+
+}
+.veloz{
+position: absolute;
+top:0px;
+left: 50%;
+background-color: rgb(17,104,65);
+margin-top:0px;
+margin-left:200px;
+width:250px;
+height:50px;
+
+}
+.veloz:before{
+position: absolute;
+top:5px;
+left:5px;
+width: 40px;
+height: 40px;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/rap2.png);
+background-repeat: no-repeat;
+background-position: center center ;
+background-size: 40px 40px;
+	
+}
+.velo1{
+position: relative;
+float: left;
+margin-top:5px;
+margin-left:70px;
+width:40px;
+height:40px;
+background-image: url(images/verde.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 40px 40px;
+}
+.velo2{
+position: relative;
+float: left;
+margin-top:5px;
+margin-left:5px;
+width:40px;
+height:40px;
+background-image: url(images/naranja.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 40px 40px;
+}
+.velo3{
+position: relative;
+float: left;
+margin-top:5px;
+margin-left:5px;
+width:40px;
+height:40px;
+background-image: url(images/rojo.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 40px 40px;
+}
+.fortunito{
+position: relative;
+float: left;
+margin-top:5px;
+margin-left:5px;
+width:40px;
+height:40px;
+opacity:0.3;
+
+}
+.fortunitomov{
+position: relative;
+float: left;
+margin-top:5px;
+margin-left:5px;
+width:40px;
+height:40px;
+
+opacity:1;
+transform:scale(1.5,1.5);
+-webkit-transform: scale(1.5,1.5);
+-moz-transform:  scale(1.5,1.5);
+-o-transform: scale(1.5,1.5);
+-ms-transform:  scale(1.5,1.5);
+
+-webkit-transition: -webkit-transform 1s linear;
+-moz-transition: -moz-transform 1s linear;
+-o-transition: -o-transform 1s linear;
+-ms-transition: -ms-transform 1s linear;
+transition: transform 1s linear;
+}
+.fortunitoclose{
+position: relative;
+float: left;
+margin-top:5px;
+margin-left:5px;
+width:40px;
+height:40px;
+
+opacity:1;
+transform:scale(1,1);
+-webkit-transform: scale(1,1);
+-moz-transform:  scale(1,1);
+-o-transform: scale(1,1);
+-ms-transform:  scale(1,1);
+
+-webkit-transition: -webkit-transform 1s linear;
+-moz-transition: -moz-transform 1s linear;
+-o-transition: -o-transform 1s linear;
+-ms-transition: -ms-transform 1s linear;
+transition: transform 1s linear;
+}
+
+.fortunito, .fortunitomov, .fortunitoclose{
+	color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;
+     background-image: url(images/logofortuna.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 100% 80%;
+}
+
+.rueda{
+float: left;
+margin-right:10px;
+width:50px;
+height:50px;
+background-color: rgb(17,104,65);
+     background-image: url(images/taller.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 50px 50px;
+    z-index: 0;
+}
+.ruedaout{
+float: left;
+margin-right:10px;
+width:50px;
+height:50px;
+background-color: rgb(17,104,65);
+     background-image: url(images/taller.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 50px 50px;
+    z-index: 0;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.manzana{
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: rgba(127,127,127,0.59);
+    z-index: 0;
+}
+.manzana0{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: rgba(255,255,255,0.97);
+    z-index: 0;
+}
+.manzanapasto{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: #2f6f25;
+    z-index: 0;
+}
+
+.manzana0:before{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 36px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/ciudadfortunalogo.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 240px 130px;
+}
+
+.manzanapremio{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: #00aeff;
+    z-index: 0;
+}
+.manzanapremio:before{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+content: "";
+color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+    word-wrap: break-word;
+     text-shadow: 1px 1px 1px black;	
+     background-image: url(images/logofortuna.png);
+background-repeat: no-repeat;
+background-position: center center;
+	
+	
+}
+.manzanapremiada{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+
+background: #003eca;
+    z-index: 0;
+}
+
+
+
+.manzanapremiada:before{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+content: "FORTUNA ENCONTRADA";
+color: #ffa300;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/logofortuna.png);
+background-repeat: no-repeat;
+background-position: center center;
+
+	
+}
+
+.manzanapinchos{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+
+background: rgba(127,127,127,0.59);
+    z-index: 0;
+}
+
+
+
+.manzanapinchos:before{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+content: "";
+color: #ffa300;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/pinchos.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 200px 200px;		
+}
+
+.manzanaaceite{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+
+background: rgba(127,127,127,0.59);
+    z-index: 0;
+}
+
+
+
+.manzanaaceite:before{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+content: "";
+color: #ffa300;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/aceite.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 200px 200px;	
+}
+
+.manzanabarro{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+
+background: rgba(127,127,127,0.59);
+    z-index: 0;
+}
+
+
+
+.manzanabarro:before{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+content: "";
+color: #ffa300;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/barro.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 200px 200px;		
+}
+
+.manzanareloj{
+position: relative;
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+
+background: rgba(127,127,127,0.59);
+    z-index: 0;
+}
+
+
+
+.manzanareloj:before{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+content: "";
+color: #ffa300;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    text-indent: 0px;
+    font-size: 18px;
+    line-height: 250px;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none; 
+     text-shadow: 1px 1px 1px black;	
+	background-image: url(images/relojito.png);
+background-repeat: no-repeat;
+background-position: center center;
+	
+}
+
+.manzana1{
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo1.png);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana2{
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo2.png);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana3{
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo3.png);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana4{
+float: left;
+margin:0px;
+width:250px;
+height:250px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo4.png);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana5{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo5.png);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana6{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo6.png);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana7{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo7.png);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana8{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo8.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana9{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo9.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana10{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo10.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana11{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo11.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+.manzana12{
+float: left;
+margin:50px;
+width:200px;
+height:200px;
+background: rgba(127,127,127,0.59);
+background-image: url(images/modulo12.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 0;
+}
+</style>
+
+
+
+<script>
+
+var playername;
+var jugador;
+var playerid;
+var playertime;
+var speed = 1;
+var speedx = 1;
+var speedbase = 1;
+
+var aceitoso = new Howl({ urls: ['sonidos/down.mp3', 'sonidos/down.ogg'] });
+var barroso = new Howl({ urls: ['sonidos/mud.mp3', 'sonidos/mud.ogg'] });
+var puntudo = new Howl({ urls: ['sonidos/explo.mp3', 'sonidos/explo.ogg'] });
+
+var gana = new Howl({ urls: ['sonidos/ganalevel.mp3', 'sonidos/ganalevel.ogg'] });
+var ganajuego = new Howl({  urls: ['sonidos/gana1.mp3', 'sonidos/gana1.ogg'] });
+var pierdejuego = new Howl({
+ urls: ['sonidos/pierde1.mp3', 'sonidos/pierde1.ogg'],buffer: true
+});
+var motor = new Howl({
+ urls: ['sonidos/auto2.mp3', 'sonidos/auto2.ogg'] , loop:true
+});
+
+//POLLING
+//loadPlayers("felipe","2@123.cl","123");
+ function loadPlayers(user,email,idi) {
+var datastring= "playername="+user+"&playeremail="+email+"&playerid="+idi;
+var urlfile = "acciones/players.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+				//alert(datauser);	 
+				 	  
+		    }	
+	
+  }
+
+}
+
+
+ function loadUser(user,score) {
+var datastring= "user="+user+"&score="+score;
+var urlfile = "acciones/timer.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+				//alert(datauser);	 
+				document.getElementById('timerplay').innerHTML =datauser;	 	  
+		    }	
+	
+  }
+
+}
+var scoreando = 0;
+ function loadScore(user,scorex) {
+var datastring= "user="+user+"&score="+scorex+"&jugador="+jugador;
+var urlfile = "acciones/score.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+					//alert(datauser);	 
+				var datx = datauser.split("#");
+				var datkey = datx[0].split("|");
+				var datname = datkey[2];
+				var datscore = datkey[1];
+			
+				document.getElementById('globalscore').innerHTML =datname+" | "+datscore;	 	
+				var sc = document.getElementById('score') ;	
+				sc.setAttribute("data-score", datscore);
+				if(scoreando == 0){
+					setTimeout(loadScore(playername,score), 1000);
+				}
+				  
+		    }	
+	
+  }
+  
+ 
+}
+
+var okusuario = 0;
+var elapsed = 0;
+ function loadContador(user) {
+ playername = document.getElementById('playername').value;
+var datastring= "user="+playername;
+var urlfile = "acciones/timeradm.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+				if(datauser == 0){
+				
+							if(okusuario == 1){
+								document.getElementById('cover').style.display ="none";	 
+								loadGanador();
+								elapsed = 1;
+								scrollnews = 1;
+								loadScore(playername,score);
+							}else{
+								document.getElementById('statususuario').innerHTML ="El Usuario no registra un ticket activo. Compre uno nuevo o contáctese con la administración ";
+							}
+						
+				}else if(datauser == -1){
+					document.getElementById('timerstart').innerHTML ="Evento aun no iniciado";		 
+					
+				}else{
+					document.getElementById('timerstart').innerHTML ="El juego comienza en: "+datauser;	
+					 loadSorteo();
+				}				
+				if(elapsed == 0){
+					setTimeout(loadContador(playername), 1000);
+				}
+					  
+		    }	
+	
+  }
+  
+ 
+}
+var username;
+var userid;
+var userordenid;
+var userproid;
+var userpro;
+var useremail;
+ function loadLogin() {
+ playername = document.getElementById('playername').value;
+var datastring= "user="+playername;
+var urlfile = "acciones/checkuser.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser =  JSON.parse(request.responseText);
+				//alert(datauser);
+				var dat1 = parseInt( datauser['existe'] );
+				var dat2 = datauser['name'];
+				var dat3 = datauser['mensaje'];
+				jugador = dat2;
+				if(dat1 == 1){
+					okusuario =1;
+						document.getElementById('statususuario').innerHTML ="Bienvenido "+dat2+". Espere, con la aplicación en pantalla, que el evento se inicie. Buena suerte!!";
+						
+							username = datauser['name'];
+						  	userid = datauser['userid'];
+						  	userordenid = datauser['ordenid'];
+						  	userproid = datauser['idpro'];
+						  	userpro = datauser['producto'];
+						  	useremail = datauser['email'];
+		
+						
+						
+				}else{
+					okusuario =0;
+						document.getElementById('statususuario').innerHTML =dat3;
+				}
+									  
+		    }	
+	
+  }
+  
+ 
+}
+
+
+
+var ganable = 0;
+ function loadGanador() {
+var datastring= "user=1";
+var urlfile = "acciones/buscando.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+				if(datauser == 0){
+					
+				}
+				if(datauser == 1){
+					
+					ganable = 1;
+				}				
+				if(ganable == 0){
+					setTimeout(loadGanador(), 1000);
+				}
+					  
+		    }	
+	
+  }
+  
+ 
+}
+
+ function loadTestigo() {
+
+var  playertime = document.getElementById('timerplay').innerHTML;
+var datastring= "playername="+username+"&playerid="+userid+"&playertime="+playertime+"&playerorden="+userordenid+"&playerproid="+userproid+"&playerproducto="+userpro+"&playeremail="+useremail;
+//alert(datastring);
+var urlfile = "acciones/testigo.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+				alert(datauser);
+				var todo = datauser.split("#");
+				var datos = todo[1].split("|");
+				if(parseInt(todo[0]) == 0){
+				document.getElementById("statusganador").innerHTML = "Lo lamentamos pero el ganador fué "+datos[0];
+				}
+				if(parseInt(todo[0]) == 1){
+				document.getElementById("statusganador").innerHTML = "FELICITACIONES!! "+jugador+" Has ganado. Acércate a nuestras oficinas a recibir tu premio.";
+				}
+							document.getElementById('statusfinal').innerHTML = "Felicitaciones!! Has completado la tarea en: "+document.getElementById('timerplay').innerHTML;
+							setTimeout(function(){document.getElementById("gameover").style.display ="block";}, 3000);
+							setTimeout(function(){ganajuego.play();}, 3000);		
+				
+				
+					  
+		    }	
+	
+  }
+  
+ 
+}
+var ganadores = new Array();
+ function loadSorteo() {
+var datastring= "playername="+1;
+var urlfile = "acciones/fortunas.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+				 var decrip = datauser.split("#"); 
+				 var fortu =decrip[0].split("_");
+				
+				var fortunita = document.getElementById('sorteo');
+				fortunita.innerHTML = fortu[1];
+				fortunita.setAttribute("title", fortu[0])
+				
+				var elite =decrip[1].split("_");
+				for(var i = 0; i< elite.length; i++){
+					ganadores.push(elite[i]);
+				}				
+				//alert(elite[0]);
+				//alert(ganadores);	 
+				board(); 
+		    }	
+	
+  }
+  
+ 
+}
+
+
+
+function loadSecur(s) {
+var datastring= "premios="+s;
+var urlfile = "acciones/secur.php" + "?x=" + parseInt(Math.random() * 1000000);
+var request =  get_XmlHttpx();		
+request.open("POST", urlfile , true);			
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		
+request.send(datastring);		
+request.onreadystatechange = function() {
+
+		    if (request.readyState == 4 ) { //respuesta ok
+		
+				var datauser = request.responseText;
+				
+				//alert(datastring);
+		    }	
+	
+  }
+  
+ 
+}
+
+
+
+
+
+function get_XmlHttpx() {
+
+  var xmlHttp = null;
+	
+  try{
+		// Opera 8.0+, Firefox, Safari
+		xmlHttp = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				alert("AJAX no soportado");
+				return false;
+			}
+		}
+	}
+	
+  
+    return xmlHttp;
+  
+}
+
+
+function randomString(length) {
+    return Math.round((Math.pow(36, length + 1) - Math.random() * Math.pow(36, length))).toString(36).slice(1);
+}
+
+
+
+var newsx = 0;
+var newsini = 0;
+var scrollnews = 0;
+function board() {
+	
+      if(newsini == 0){
+      newsini = 1;
+	  setTimeout(function(){board2();}, 0);
+    }
+    	 
+}
+function board2() {
+	var tn =document.getElementById('news');
+    tn.innerHTML = ganadores[newsx];
+    setTimeout(function(){tn.className = "news"}, 0);
+    setTimeout(function(){tn.className = "newsout"}, 4000);
+    newsx++;
+    if(newsx > ganadores.length - 1){
+	  newsx = 0;  
+    }
+      if(scrollnews == 0){
+	  setTimeout(function(){board2();}, 5000);
+    }
+    	 
+}
+
+
+var celdaspremios = {};
+		var celdas = new Array();
+			var semillas = new Array();
+	var vecinos = new Array();
+	var visitadas = new Array();
+	var premios = new Array();
+	var barros = new Array();
+	var pinchos = new Array();
+	var relojes = new Array();
+	var activos = 0;
+	var repara = 0;
+	var celdaactual = 0;
+	var celdastotal = 1296;
+	var celdaspos = new Array();
+	var direc = [1,2,3,4];
+function inicio(){
+
+loadSorteo();
+loadContador(playername);
+	
+	    var requestAnimationFrame = window.requestAnimationFrame ||  window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+
+    var cpx = 0; var cpy = 0;
+    var zi = 0;
+	for(var i = 1; i < 1297; i++){
+	zi++;
+	
+		var man1 = "manzana" + i;
+		 var element = document.createElement('div');
+    element.id = man1;
+    var manr = parseInt((Math.random() * 3)) + 1;
+		var man2 ="manzana" + manr;
+    element.className = man2;
+   var mod = document.getElementById('ciudad');
+    mod.appendChild(element);
+    celdas.push(i);
+     
+     celdaspos.push(i+"#"+cpx+"#"+cpy);
+     cpx+=250;
+    if(zi > 35){
+	    zi = 0;
+	    cpx = 0;
+	    cpy+=250;
+	     
+    }
+	}
+	
+//alert(celdaspos);
+//var partida = parseInt((Math.random() * 1295)) + 1;
+	var partida = 631;
+	var partida2 = celdas.splice(partida, 1);
+	//visitadas.push(partida); 
+	var partidafull = "manzana" +partida;
+	celdaactual = partidafull;
+	document.getElementById(celdaactual).className = "manzana0";
+	
+maze(partida);
+	
+}
+
+var intentos = 0;
+var lastmanzana = 0;
+function maze(entrada){
+				
+				//var di = parseInt((Math.random() * 4) + 1) ;
+				direc = shuffle2(direc);
+				//console.log(direc);
+			var v0 =  0;
+			var adelante = parseInt(entrada) + 2;
+						var atras =  parseInt(entrada) - 2;
+						var arriba =  parseInt(entrada) - 72;
+						var abajo = parseInt(entrada) + 72;
+						//semillas.push(adelante);
+						//semillas.push(atras);
+						//semillas.push(arriba);
+						//semillas.push(abajo);
+						//semillas.push(adelante - 1);
+						//semillas.push(atras + 1);
+						//semillas.push(arriba +36);
+						//semillas.push(abajo - 36);
+					var avance = 0;
+					var disponible = 0;
+					var entre = 0;
+					var ori = 0;
+			
+			
+			for(var m = 0; m < direc.length; m++){
+			var di = direc[m];
+			if(di == 1){avance =parseInt(entrada) + 2;entre = entrada + 1;ori ="adelante"; }
+			if(di == 2){avance =parseInt(entrada) - 2;entre = entrada - 1;ori ="atras";}
+			if(di == 3){avance =parseInt(entrada) - 72;entre = entrada - 36;ori ="arriba";}
+			if(di == 4){avance =parseInt(entrada) + 72;entre = entrada + 36;ori ="abajo";}
+			
+					if(avance > 0 && avance < 1296){
+						/*
+for(var i = 0; i < visitadas.length; i++){
+						var v = visitadas[i];
+						if(v == avance){
+						v0 = 1;
+						disponible = 1;
+						break;
+						}
+
+						
+						}
+						if(v0 == 0){
+						//alert("disponible");
+						disponible = 0;
+						break;
+						}*/
+						var cla = "manzana" + avance;
+						var clav = document.getElementById(cla).className;
+						if(clav == "manzana"){
+						disponible = 1;
+						//break;
+						}else{
+							disponible = 0;
+						}
+						
+						
+						
+						}else{
+				
+							disponible = 1;
+						}
+						//console.log("vueltassss   "+ m);
+						if(disponible == 0){
+							break;
+						}
+						
+				
+			}
+			
+				
+			
+			
+						
+			if(disponible == 0){
+				visitadas.push(entrada);
+				//removeVal(celdas, entrada); 
+				//visitadas.push(entre); 
+				visitadas.push(avance); 
+				
+				semillas.push(entrada);
+				semillas.push(entre);
+				semillas.push(avance);
+				
+				var porsi = parseInt(visitadas.length *100 / 640);
+				
+				
+					document.getElementById("statusinicio").innerHTML = porsi +"%";
+				
+				//removeVal(celdas, entre);
+				//removeVal(celdas, avance);
+				//removeVal(semillas, entre);
+				//removeVal(semillas, avance);
+					/*
+for(var x = 0; x < celdas.length; x++){
+						var df = celdas[x];
+						if(df == entrada){ var xx1 = celdas.splice(x, 1);}
+						if(df == entre){ var xx2 = celdas.splice(x, 1);}
+						if(df == avance){ var xx3 = celdas.splice(x, 1);}
+	 
+						}
+*/
+				var fclas = "manzana";
+				var fclaspin = "manzana";
+				var fortu = parseInt((Math.random() * 100) ) ;
+				
+				if(fortu > 5 && lastmanzana == 0){ fclas = "manzanapremio";  }
+				lastmanzana++;
+				var obs = parseInt((Math.random() * 100) ) ;
+				if(lastmanzana == 4){lastmanzana = 0}
+				var cel = "manzana" + avance;
+				var cex = "manzana" + entre;
+				if(obs > 50 && obs < 76 && lastmanzana == 0){ fclas = "manzanabarro";}
+				if(obs > 25 && obs < 50 && lastmanzana == 0){ fclas = "manzanaaceite";}
+				if(obs >  75 && lastmanzana == 0){ fclas = "manzanapinchos";}
+				//if(obs >  75 && lastmanzana == 0){ fclas = "manzanapinchos";}
+				document.getElementById(cel).className ="manzana";
+				document.getElementById(cex).className = fclas;
+				if(fclas == "manzanapremio"){
+				var rst = randomString(20);
+					premios.push(entre+"#"+rst);
+					celdaspremios[entre]=rst;
+
+
+				}
+				if(fclas == "manzanabarro"){
+					barros.push(avance);
+				}
+				
+				
+				entrada = avance;
+				//alert(visitadas.length);
+				if(visitadas.length < 640){
+                    setTimeout(function(){maze(entrada);}, 0);
+                }else{
+                  
+                  //document.getElementById("statusinicio").innerHTML = visitadas.length;
+                  
+                  var lh = 612;
+                 for(var i = 1 ; i < 37; i++){
+                 var ih = parseInt(lh) + i;
+	               var cc = "manzana" + ih;
+				document.getElementById(cc).className = "manzana";  
+				semillas.push(ih);
+                 }
+                   var lv = 1;
+                 for(var i = 18 ; i < 1296; i+=36){
+                 var ih = parseInt(lv) + i;
+	               var cc = "manzana" + ih;
+				document.getElementById(cc).className = "manzana";  
+				semillas.push(ih);
+                 }
+                 
+                 //bordes
+                  for(var i = 1 ; i < 37; i++){
+                 var cc = "manzana" + i;
+				document.getElementById(cc).className = "manzanapasto";  
+                 }
+                  var bx = 1;
+                  for(var i = 1 ; i < 1261; i +=36){
+                 var cc = "manzana" + i;
+				document.getElementById(cc).className = "manzanapasto";  
+                 }
+                  for(var i = 1260 ; i < 1297; i++){
+                 var cc = "manzana" + i;
+				document.getElementById(cc).className = "manzanapasto";  
+                 }
+                   for(var i = 36 ; i < 1297; i +=36){
+                 var cc = "manzana" + i;
+				document.getElementById(cc).className = "manzanapasto";  
+                 }
+
+                 
+                 
+                 document.getElementById(celdaactual).className = "manzana0";
+                  //alert(barros);
+                 //urbano();
+                 
+                 //document.getElementById('cover').style.display = "none";
+//countdownTimer = setInterval('secondPassed()', 1000);
+//motor.play();
+                 
+                 var secu1 = JSON.stringify(celdaspremios);
+                 //alert(celdaspremios);
+                 loadSecur(secu1);
+                 
+                }
+                 intentos = 0;
+                //console.log("disponiblesssss");
+			}else{
+				
+				var se = visitadas.length - intentos;
+				//entrada = visitadas.pop();
+				//entrada = visitadas.pop();
+				
+				entrada = visitadas[intentos];
+               intentos += 2;
+				if(visitadas.length < 640){
+					setTimeout(function(){maze(entrada);}, 0);
+				}else{
+                 
+                 //alert(celdaspos[630]);
+                 var lh = 612;
+                 for(var i = 1 ; i < 37; i++){
+                 var ih = parseInt(lh) + i;
+	               var cc = "manzana" + ih;
+				document.getElementById(cc).className = "manzana";  
+                 }
+                   var lv = 1;
+                 for(var i = 18 ; i < 1296; i+=36){
+                 var ih = parseInt(lv) + i;
+	               var cc = "manzana" + ih;
+				document.getElementById(cc).className = "manzana";  
+                 }
+                 document.getElementById(celdaactual).className = "manzana0";
+                 
+                }
+                //console.log("visitadasssssss intentos   " + intentos + "visitadas total " + visitadas.length);
+                
+			}
+			
+			/*else{
+				intentos = 0;
+				entrada = celdas.pop();
+				if(celdas.length > 500){
+					setTimeout(function(){maze(entrada);}, 0);
+				}else{
+                 setTimeout(function(){alert(celdas.length);}, 1000);
+                }
+
+			}*/
+	
+	
+}
+
+
+function removeVal(arr, value) {
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] === value) {
+            arr.splice(i, 1);
+            break;
+        }
+    }
+    return arr;
+}
+function shuffle2(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+window.addEventListener("keydown", checkKeyPressed, false);
+ 
+function checkKeyPressed(e) {
+  if(activos == 0){
+	switch(e.keyCode) {
+        case 37:
+            // left key pressed
+            //alert("The left key is pressed.");
+            rota(102);
+
+            break;
+        case 38:
+            // up key pressed
+           // alert("The up key is pressed.");
+         
+	          rota(100);   
+          
+           
+            break;
+        case 39:
+            // right key pressed
+            //alert("The right key is pressed.");
+             rota(101);
+            break;
+        case 40:
+            // down key pressed
+            //alert("The down key is pressed.");
+          
+	          rota(103);   
+          
+            break;  
+    }   
+}    
+}
+var deg = 0;
+var speedx = 0;
+var speedy = 50;
+var rap = 50;
+var nextrot = 0;
+var lastrot = 0;
+
+var xp = 0;
+var yp = 1;
+var por = 1;
+var motoreando = 0;
+function rota(x){
+if(activos == 0){ 
+		var div = document.getElementById('car');
+	if(motoreando == 0){ 
+	motor.play();
+	motoreando = 1;
+	}
+
+	if(x == 1){ 
+	deg -= 7.5; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+	move(1);
+	}
+	if(x == 0){ 
+	deg +=7.5; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+	move(1);
+	}  
+	if(x == 2){ 
+	deg =deg + 180; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+	} 
+	if(x == 3){ 
+	deg =deg; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+		move(1);
+	} 
+		if(x == 100){ 
+	deg =0; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+		move(1);
+		nextrot = 180;
+		lastrot = 0;
+	}
+			if(x == 101){ 
+	deg =90; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+		move(1);
+		nextrot = -90;
+		lastrot = 90;
+	} 
+				if(x == 102){ 
+	deg =-90; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+		move(1);
+		nextrot = 90;
+		lastrot = -90;
+	} 
+	if(x == 103){ 
+	deg =180; 
+	xp = 1 * Math.cos(deg * 3.14 / 180).toFixed(2);;
+	yp = 1 * Math.sin(deg * 3.14 / 180).toFixed(2);;
+		move(1);
+		nextrot = 0;
+		lastrot = 180;
+	} 
+	
+		if(x == 1000){ 
+	deg =1079; 
+	xp = 0;
+	yp = 0;
+		move(1);
+		nextrot = 0;
+		lastrot = 0;
+	} 
+	       
+
+}
+
+}
+
+
+
+var micelda = 631;
+
+
+//requestAnimationFrame
+var mv = 0;
+var mh = 0;
+var mvz = 1;
+var mhz = 1;
+
+var etapa = 1;
+var moviendo = 0;
+var sonando = 0;
+var embarrado = 0;
+var pinchado = 0;
+var resbaloso = 0;
+var score = 0;
+//requestAnimationFrame(function(){move(1);});
+ 
+function move(x){
+if(moviendo == 0){
+moviendo = 1;
+ 
+var div = document.getElementById('player');
+
+				if(speedx > - 4500 && speedx < 4250){
+				speedx += (yp*60) * speed;
+			}else{
+				//rota(nextrot);
+			}
+				if(speedy > - 4500 && speedy < 4250){
+				speedy += -(xp*60) * speed;
+			}else{
+					//rota(nextrot);
+			}
+			 	//speedx += (yp*100);
+			 	//speedy += -(xp*100);
+			 	if(mvz < 250){
+				 mvz += Math.abs(xp*60);
+			 	}else{
+				 	mvz = 0;
+			 	}
+			 	if(mhz < 250){
+				 mhz += Math.abs(yp*60);
+			 	}else{
+				 	mhz = 0;
+				 					 	
+			 	}
+			 	
+			 	
+			 	//console.log("Vertical:  " + speedy);
+			 	//console.log("horizontal:  " + speedx);
+			 	
+			 	div.style.webkitTransformOrigin = speedx+' '+speedy;
+			 	div.style.mozTransformOrigin = speedx+' '+speedy;
+			 	div.style.msTransformOrigin = speedx+' '+speedy;
+			 	div.style.oTransformOrigin = speedx+' '+speedy;
+			 	div.style.TransformOrigin = speedx+' '+speedy;
+			 	div.style.webkitTransform = 'translate('+speedx+'px,'+speedy+'px) rotate('+deg+'deg)' ; 
+			 	div.style.mozTransform = 'translate('+speedx+'px,'+speedy+'px) rotate('+deg+'deg)' ; 
+			 	div.style.msTransform = 'translate('+speedx+'px,'+speedy+'px) rotate('+deg+'deg)' ; 
+			 	div.style.oTransform = 'translate('+speedx+'px,'+speedy+'px) rotate('+deg+'deg)' ; 
+			 	div.style.transform = 'translate('+speedx+'px,'+speedy+'px) rotate('+deg+'deg)' ; 
+			 	
+			 	var posx = 4625 +speedx;
+			 	var posy = 4375 +speedy;
+			 	
+			 	var posx1 = 0;
+			 	var posy1 = 0;
+			 	
+/*
+			 	if(lastrot == -90){posx1 =(posx) -125; posy1 = posy;}
+			 	if(lastrot == 90){posx1 = posx + 125; posy1 = posy;}
+			 	if(lastrot == 0){posx1 = posx; posy1 = posy -125;}
+			 	if(lastrot == 180){posx1 = posx; posy1 = posy + 125;}
+			 	var celly1 = Math.abs(parseInt((posy1) / 250));
+			 	var cellx1= Math.abs(parseInt((posx1) / 250));
+			 	var newcell1 = 1 + cellx1 + (celly1 * 36);
+			 	var mz1 = "manzana" + newcell1;
+			 	var clacell1 = document.getElementById(mz1).className;
+*/
+			 	
+
+				 	var celly = Math.abs(parseInt(posy / 250));
+			 	var cellx= Math.abs(parseInt(posx / 250));
+			 	var newcell = 1 + cellx + (celly * 36);
+			 	var mz = "manzana" + newcell;
+			 	var clacell = document.getElementById(mz).className;
+			 	if(clacell == "manzana"){
+				 	//document.getElementById(mz).className = "manzana0";
+				 	sonando = 0;	
+			 	}
+			 	if(clacell == "manzanapremio"){
+					if(sonando == 0){
+					document.getElementById(mz).className = "manzanapremiada";
+					sonando = 1;	
+					gana.play();
+					score++;
+					var fo = "fortunito" + score;
+					document.getElementById(fo).className ="fortunitomov";
+					setTimeout(function(){document.getElementById(fo).className ="fortunitoclose";}, 1000);
+					//document.getElementById("score").innerHTML =score;
+						lanzaconfetti();
+						
+						//loadScore(playername,score);
+						
+						if(score == 2){
+						loadTestigo();
+						scoreando = 1;	
+							yp = 0;
+					xp = 0;
+						}
+					}
+
+				}
+				if(clacell == "manzana1" || clacell == "manzana2"  || clacell == "manzana3" || clacell == "manzana4" || clacell == "manzana5" || clacell == "manzana6" || clacell == "manzana7" || clacell == "manzana8" || clacell == "manzana9" || clacell == "manzana10" || clacell == "manzana11" || clacell == "manzana12" || clacell == "manzanapasto"  ){
+				 	yp = yp * -1;
+	xp = xp *-1;
+	activos = 1;
+	//repara = 0;
+	embarrado = 0;
+	resbaloso = 0;
+	speed = speedbase;
+			 	}else{
+			 	//speed = speedbase;
+				 	activos = 0;
+			 	}
+			 	
+			 		if(clacell == "manzanabarro"){
+			 		if(embarrado == 0){
+				 		embarrado = 1;
+				 		aceitoso.play();
+			 		}
+				 	yp = yp/5;
+	xp = xp/5;
+	//rota(nextrot);
+			 	}
+			 	if(clacell == "manzanapinchos"){
+				 	if(repara == 0){
+				 	puntudo.play();
+					 yp = 0;
+		xp = 0;
+		humo = 1;
+		activos = 1;	
+		repara = 1;
+		pinchado = 1;
+		speed = 0.5;
+		speedbase = 0.5;
+				 	}
+				 	
+	//rota(nextrot);
+			 	}
+if(clacell == "manzanaaceite"){
+				if(resbaloso == 0){
+				 		resbaloso = 1;
+				 		aceitoso.play();
+			 		}
+				 	yp = 0;
+	xp = 0;
+	rota(1000);
+	
+			 	}
+
+				 	
+			 	
+			 
+			 	//console.log("desde fichaaaaa:  " + newcell + "  "+( cellx)  +"   "+(celly));	
+			 	//document.getElementById("drop").style.top = posy1 + "px";
+			 	//document.getElementById("drop").style.left = posx1 + "px";
+			 	
+/*
+			 	 var coloretex = buferin(posx,posy);
+						 // console.log(pxx+"desde auto:  " + coloretex);	
+if(coloretex == 0){
+	yp = yp * -1;
+	xp = xp *-1;
+}
+if(coloretex == "VERDE"){
+	if(sonando == 0){
+	sonando = 1;	
+	gana.play();
+	score++;
+	var fo = "fortunito" + score;
+	document.getElementById(fo).className ="fortunitomov";
+	setTimeout(function(){document.getElementById(fo).className ="fortunitoclose";}, 1000);
+	document.getElementById("score").innerHTML =score;
+		lanzaconfetti();
+		
+		if(score == 3){
+			
+			setTimeout(function(){document.getElementById("gameover").style.display ="block";}, 3000);
+			setTimeout(function(){ganajuego.play();}, 3000);	
+			yp = 0;
+	xp = 0;
+		}
+	}
+
+}
+if(coloretex == "ROJO"){
+sonando = 0;	
+}
+if(coloretex == "PREMIO"){
+//alert("Premiooo");
+}
+*/
+setTimeout(function(){moviendo = 0;move(1)}, 450);			 	
+mh = -(speedx);
+mv = -(speedy);	
+	if(mvz == 0 || mhz == 0 ){
+	etapa++;
+	movecity(1);
+	}	
+
+			
+}
+
+loadUser(playername,0);
+
+
+}
+
+function rapido(x){
+speed = x;
+speedbase = x;
+}
+
+function activar(x){
+var tr = "rueda" + x;
+document.getElementById(tr).className = "ruedaout"; 
+activos = 0;
+humo = 0;
+repara = 0;
+pinchado = 0;
+speed = 1;
+speedbase = 1;
+//rota(lastrot);
+}
+var mvc = 0;
+var mhc = 0;
+var movcity = 0;
+function movecity(x){
+if(movcity == 0){
+	movcity = 1;
+	var div = document.getElementById('ciudad');  
+
+    div.style.webkitTransform = 'translate('+mh+'px, '+mv+'px)'; 
+    div.style.mozTransform    = 'translate('+mh+'px, '+mv+'px)'; 
+    div.style.msTransform     = 'translate('+mh+'px, '+mv+'px)'; 
+    div.style.oTransform      ='translate('+mh+'px, '+mv+'px)'; 
+    div.style.transform       ='translate('+mh+'px, '+mv+'px)'; 
+setTimeout(function(){movcity = 0;}, 800);	
+}
+    
+}
+
+
+
+
+
+
+var seconds = 180;
+function secondPassed() {
+    var minutes = Math.round((seconds - 30)/60);
+    var remainingSeconds = seconds % 60;
+    if (remainingSeconds < 10) {
+        remainingSeconds = "0" + remainingSeconds;  
+    }
+    document.getElementById('timerplay').innerHTML = minutes + ":" + remainingSeconds;
+    if (seconds == 0) {
+        clearInterval(countdownTimer);
+        document.getElementById('timerplay').innerHTML = "Buzz";
+    } else {
+        seconds--;
+    }
+}
+ 
+var countdownTimer;
+
+
+
+</script>
+
+
+
+</head>
+
+<body  onload="inicio()">
+
+<div id ="escenario" class="escenario" > 
+
+
+<canvas id="citybase" width="250" height="250" style="display:none;"></canvas>
+<canvas id="citypremios" width="250" height="250" style="display:none;"></canvas>
+
+<div id ="ciudad" class="ciudad" > 
+<!-- <canvas id="city" width="9100" height="9100" style="z-index:100;display:none;" class="city"></canvas> -->
+
+<div id ="player" class="player" style="top:4375px;left:4625px;" > 
+
+<div id ="car" class="car"  > 
+ 
+<canvas id="confetti2"  class="" width = "200" height="200" style="position:absolute;top:50px;left:50%;margin-left:-100px;;"></canvas> 
+</div>
+</div>
+
+<div id ="drop" class="drop"  ></div>
+
+</div>
+
+<div id ="barra1" class="barra1"  ><div id ="logos" class="score" style="top:0px;left:60px; margin-left:0px;width:600px;background-color:transparent;" ><div id ="fortunito1" class="fortunito"  ></div><div id ="fortunito2" class="fortunito"  ></div><div id ="fortunito3" class="fortunito"  ></div><div id ="fortunito4" class="fortunito"  ></div><div id ="fortunito5" class="fortunito"  ></div><div id ="fortunito6" class="fortunito"  ></div><div id ="fortunito7" class="fortunito"  ></div><div id ="fortunito8" class="fortunito"  ></div><div id ="fortunito9" class="fortunito"  ></div><div id ="fortunito10" class="fortunito"  ></div></div><div id ="timerplay" class="score" style="width:200px;left:100%;margin-left:-200px;" title="Tiempo transcurrido" >0 </div><div id ="score" class="score"  style="color:grey;" title="Score" data-score="0"></div><div id ="globalscore" class="score" style="width:250px;left:100%;margin-left:-460px;"  title="Máximo Score">0 </div></div>
+<div id ="barra2" class="barra2"  > 
+
+<a id ="rueda1" class="rueda"  href="javascript:activar(1)" style="top:-60px;left:20px; margin-right:10px;"> </a>
+<a id ="rueda2" class="rueda"  href="javascript:activar(2)" style="top:-60px;left:80px; margin-right:10px;"> </a>
+<a id ="rueda3" class="rueda"  href="javascript:activar(3)" style="top:-60px;left:80px; margin-right:10px;"> </a>
+
+<div id="veloz" class="veloz" style="display:block;">
+
+<a id ="normal" class="velo1" title="Normal" href="javascript:rapido(1)" style=""> </a>
+<a id ="risky" class="velo2"   title="Risky" href="javascript:rapido(2)" style=""> </a>
+<a id ="crazy" class="velo3"   title="Crazy" href="javascript:rapido(3)" style=""> </a>
+
+</div>
+
+
+	<a id ="avantop" class="avanzar1"  href="javascript:rota(100)" style="top:-60px;left:50%; margin-left:-25px;">&#9650 </a> 
+<a id ="avanleft" class="avanzar1"  href="javascript:rota(102)" style="top:-25px;left:50%; margin-left:-90px;">&#9664 </a> 
+<a id ="avanright" class="avanzar1"  href="javascript:rota(101)" style="top:-25px;left:50%; margin-left:40px;">&#9654 </a> 
+<a id ="avanbottom" class="avanzar1"  href="javascript:rota(103)" style="top:0px;left:50%; margin-left:-25px;">&#9660; </a>
+	
+	
+</div>
+<div id ="cover" class="cover"  >
+
+<div id ="perfil" class="perfil" style="" title=""></div>
+
+
+<a id ="home" class=""  href="http://www.fortunainmobiliaria.cl" style="position:absolute;top:200px;left:10px;display:block;width:40px;height:40px;z-index:5000;"></a>
+
+<div id ="board" class="board" style="" title="Recientes Ganadores">
+<div id ="news" class="news" style="" title=""></div>
+</div>
+
+<div id ="timerstart" class="score" style="width:400px;left:100%;top:200px;margin-left:-490px;"  title="Tiempo faltante para inicio del juego" >0 </div>
+<div id ="sorteo" class="sorteo" style="position:relative;width:800px;top:350px;left:50%;margin-left:-400px;" title=""></div>
+<div id ="statusinicio" class="statusinicio"  style="top:200px;left:100%;margin-left:-90px;"   title="Contenidos" >0 </div>
+<label style="width:250px;position:absolute;top:410px;left:50%;margin-left:-125px;text-align:center;"> Su Email:</label> <input type="text" name="playername" id="playername"  style="width:350px;height:30px;position:absolute;top:440px;left:50%;font-size:18px;margin-left:-175px;">
+<a id ="login" class="lklogin"  href="javascript:loadLogin()" style="">Unirse al Juego</a>
+
+<div id ="statususuario" class="statususuario"  style=""> </div>
+
+<div id ="help" class="statushelp"  style=""> Una vez iniciada la cuenta regresiva para el inicio del juego, participe ingresando su email y presionando Unirse al juego. <br>Para Ganar recorra Ciudad Fortuna y encuentre 10 logotipos de Fortuna Inmobiliaria en el menor tiempo posible. <br>El ganador es quién complete antes la tarea descrita. <br>Para desplazarse ocupe las flechas de su teclado o los botones dispuestos para tal efecto.<br>De preferencia use navegador Chrome o Safari últimas versiones y una resolución mínima de pantalla de 1024 x 768 pixeles. <br>Cierre otras aplicaciones mientras esté jugando<br>Verifique que su conexión a internet es estable y de calidad aceptable (recomendado banda ancha mínimo: Bajada 1 Mpbs, Subida 0.7 Mpbs o superior)</div>
+
+</div>
+<div id ="gameover" class="gameover"  > 
+<a id ="home2" class=""  href="http://www.fortunainmobiliaria.cl" style="position:absolute;top:30px;left:30px; display:block;width:50px;height:50px;"><img src="images/icohome.png" width="50" height="50"> </a>
+
+<div id ="statusfinal" class="score"  style="top:70%;width:600px;left:50%;margin-left:-300px;"> </div><div id ="statusganador" class="statusganador"  style="width:800px;left:50%;top:40%;margin-left:-400px;"> </div></div>
+
+</div>
+
+
+<script>
+
+
+	
+	
+</script>
+
+ <canvas id="confetti"  class="confetti" width = "500" height="500" ></canvas>
+
+ <script type="text/javascript" src="js/particulas.js"></script>
+ 
+ <script> 
+ //humo auto
+	lanzaconfetti2();
+	 
+ </script>
+ 
+ 
+</body>
+</html>
+</div>
